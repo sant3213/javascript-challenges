@@ -1,0 +1,156 @@
+.clock {
+    border-radius: 50%;
+    border-color: blue;
+    border: 20px solid rgb(116, 116, 228);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hour {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hour-1 {
+    top: 20px;
+    left: 280px;
+}
+
+.hour-2 {
+    top: 95px;
+    left: 357px;
+}
+
+.hour-3 {
+    top: 190px;
+    left: 380px;
+}
+
+.hour-4 {
+    top: 266px;
+    left: 367px;
+}
+
+.hour-5 {
+    top: 342px;
+    left: 310px;
+}
+
+.hour-6 {
+    top: 380px;
+    left: 190px;
+}
+
+.hour-7 {
+    top: 342px;
+    left: 80px;
+}
+
+.hour-8 {
+    top: 266px;
+    left: 20px;
+}
+
+.hour-9 {
+    top: 190px;
+    left: 10px;
+}
+
+.hour-10 {
+    top: 95px;
+    left: 25px;
+}
+
+.hour-11 {
+    top: 20px;
+    left: 100px;
+}
+
+.hour-12 {
+    top: 0px;
+    left: 180px;
+}
+
+.point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    top: 190px;
+    left: 185px;
+    border-radius: 50%;
+}
+
+
+.minute-hand-wrapper {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+
+.minute-hand {
+    position: relative;
+}
+
+.minute-hand .hand {
+    width: 4px;
+    background-color: black;
+    height: 180px;
+    position: absolute;
+    left: 170px;
+}
+
+
+.hour-hand-wrapper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.hour-hand {
+    position: relative;
+}
+
+.minute-hand-wrapper {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+
+.second-hand-wrapper {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 28px;
+    left: 22px;
+    border-radius: 50%;
+}
+
+.second-hand {
+    position: relative;
+}
+
+.second-hand .hand {
+    width: 2px;
+    height: 175px;
+    position: absolute;
+    left: 174px;
+    background-color: red;
+}
+.arrow {
+    position: absolute;
+    left: 185px;
+    top: 100px;
+    transform: rotate(180deg);
+}
