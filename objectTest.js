@@ -95,3 +95,21 @@ function myFunction(a, b) {
  // iterating, acc is the accumulator, the result of the object
  // {} is the initial value
 
+
+                     /***************************************************************************************************************************************************************** */
+ // Write a function that takes an object (a) as argument
+ // Return an array with all object keys
+
+ // myFunction({a:1,b:2,c:3}) Expected ['a','b','c']
+ // myFunction({j:9,i:2,x:3,z:4}) Expected ['j','i','x','z']
+ // myFunction({w:15,x:22,y:13}) Expected ['w','x','y']
+
+ function myFunction(a) {
+    return Object.keys(a); }
+
+// Input un objeto con propiedades, algunas de ellas estan vacias.
+// Llenar los valores en blanco con null
+// {a:'x', b:'y', c:''} Expected {a:'x', b:'y', c: null}
+
+
+ 
