@@ -111,5 +111,54 @@ function myFunction(a, b) {
 // Llenar los valores en blanco con null
 // {a:'x', b:'y', c:''} Expected {a:'x', b:'y', c: null}
 
+                     /***************************************************************************************************************************************************************** */
+// Write a function that takes an object (a) as argument
+// Return the sum of all object values
 
+//myFunction({a:1,b:2,c:3}) Expected 6
+//myFunction({j:9,i:2,x:3,z:4}) Expected 18
+//myFunction({w:15,x:22,y:13}) Expected 50
+function myFunction(a) {
+    return Object.values(a).reduce((sum, cur) => sum + cur, 0);
+ }
+
+                     /***************************************************************************************************************************************************************** */
+
+ // Write a function that takes an object as argument
+// It should return an object with all original object properties
+// except for the property with key 'b'
+
+//myFunction({ a: 1, b: 7, c: 3 }) Expected { a: 1, c: 3 }
+//myFunction({ b: 0, a: 7, d: 8 }) Expected { a: 7, d: 8 }
+//myFunction({ e: 6, f: 4, b: 5, a: 3 })  Expected { e: 6, f: 4, a: 3 }
+function myFunction(obj) {
+    const { b, ...rest } = obj;
+    return rest;
+}
+
+
+                     /***************************************************************************************************************************************************************** */
+// Write a function that takes an object (a) and a number (b) as arguments
+// Multiply all values of 'a' by 'b'
+// Return the resulting object
+
+//myFunction({a:1,b:2,c:3},3) Expected {a:3,b:6,c:9}
+//myFunction({j:9,i:2,x:3,z:4},10) Expected {j:90,i:20,x:30,z:40}
+// myFunction({w:15,x:22,y:13},6) Expected {w:90,x:132,y:78}
+function myFunction(a, b) {
+    return Object.entries(a).reduce((acc, [key, val]) => {
+        return { ...acc, [key]: val * b };
+    }, {});
+ }
+
+function myFunction( a, b ) {
+  let rsp = {};
+   for (const property in a) {
+        rsp = {
+         ...rsp,
+        [property]: a[property]*b
+         }
+   }
+   return rsp;
+ }
  
